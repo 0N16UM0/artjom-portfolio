@@ -1,0 +1,68 @@
+/* Basic styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+html {
+  font-size: 62%;
+  overflow-x: hidden;
+  background: url("images/bg/cobweb.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+body {
+  background-color: rgba(0, 29, 0, 0.815);
+  backdrop-filter: blur(10px);
+  color: #14ff6a;
+}
+
+.header {
+  background-color: rgba(0, 29, 0, 0.815);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  width: 100%;
+  padding: 3rem 9%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.logo {
+  font-size: 3rem;
+  color: #14ff6a;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.logo:hover {
+  transform: scale(1.1);
+}
+.navbar a {
+  font-size: 1.8rem;
+  color: white;
+  margin-left: 4rem;
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
+  border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover, .navbar a:active {
+  color: #14ff6a;
+  border-bottom: 3px solid #14ff6a;
+  ;
+}
+
+#menu-icon {
+  font-size: 3rem;
+  color: #14ff6a;
+  display: none;
+}
