@@ -2,6 +2,7 @@ let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
+// const links = document.querySelectorAll('.nav-item');
 
 window.onscroll = () => {
   sections.forEach(sec => {
@@ -18,3 +19,16 @@ window.onscroll = () => {
     }
   })
 }
+
+if (links.length) {
+  links.forEach((link) => {
+    link.addEventListener('click', (e) => {
+      links.forEach((link) => {
+          link.classList.remove('active');
+      });
+      e.preventDefault();
+      link.classList.add('active');
+    });
+  });
+}
+    
