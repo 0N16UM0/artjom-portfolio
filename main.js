@@ -1,8 +1,19 @@
-let menuIcon = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.navbar');
-let sections = document.querySelectorAll('section');
-let navLinks = document.querySelectorAll('header nav a');
-// const links = document.querySelectorAll('.nav-item');
+const menuIcon = document.querySelector('#menu-icon');
+const navbar = document.querySelector('.navbar');
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('header nav a');
+const hiddenelems = document.querySelectorAll('div.hidden');
+const links = document.querySelectorAll('.nav-item');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show'); 
+    }
+  });
+});
+
+hiddenelems.forEach((el) => observer.observe(el));
 
 window.onscroll = () => {
   sections.forEach(sec => {
@@ -20,15 +31,15 @@ window.onscroll = () => {
   })
 }
 
-if (links.length) {
-  links.forEach((link) => {
-    link.addEventListener('click', (e) => {
-      links.forEach((link) => {
-          link.classList.remove('active');
-      });
-      e.preventDefault();
-      link.classList.add('active');
-    });
-  });
-}
-    
+// if (links.length) {
+//   links.forEach((link) => {
+//     link.addEventListener('click', (e) => {
+//       links.forEach((link) => {
+//           link.classList.remove('active');
+//       });
+//       e.preventDefault();
+//       link.classList.add('active');
+//     });
+//   });
+// }
+

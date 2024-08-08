@@ -15,15 +15,15 @@
     <nav class="navbar" id="navbar">
       <a href="#home" class="nav-item active">Home</a>
       <a href="#about" class="nav-item">About</a>
-      <a href="#portfolio" class="nav-item">Projekte</a>
+      <a href="#projects" class="nav-item">Projekte</a>
       <a href="#skills" class="nav-item">Fähigkeiten</a>
-      <a href="#contact" class="nav-item">Contact</a>
+      <a href="#contact" class="nav-item">Kontakt</a>
     </nav>
   </header>
   <section class="home" id="home">
     <div class="home-content">
       <h1>Hallo, Ich bin <span>Artjom</span></h1>
-      <h3 class="text-animation">Ich bin ein <span></span></h3>
+      <h3 class="text-animation">Ich bin ein <br><span></span></h3>
       <p>I'm a full-stack developer with 2 years of experience with emphasis on frontend languages, libraries, and
         frameworks. Experienced in developing applications with a day to day focus on React, testing, and state
         management.
@@ -36,36 +36,87 @@
   </section>
 
   <section class="about" id="about">
-    <h2>About</h2>
-    <p>Mit dem Tech-Stack HTML, CSS, JS, React und PHP entwickle ich Fullstack Webseiten und Anwendungen.<br>Durch meine
-      Ausbildung zum Fachinformatiker Anwendungsentwicklung kann ich zudem<br>alle Abläufe der Projekplanung und
-      Software-Entwicklung mit meinen Kenntnissen bereichern.</p>
+    <h2 class="heading">About</h2>
+    <div class="about-container">
+      <div class="about-box hidden">
+        <div class="about-icon">
+          <i class="fa-solid fa-laptop"></i>
+        </div>
+        <h3>Frontend</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque saepe hic ea vel, consequatur recusandae quo
+          sapiente.</p>
+      </div>
+      <div class="about-box hidden">
+        <div class="about-icon">
+          <i class="fa-solid fa-server"></i>
+        </div>
+        <h3>Backend</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque saepe hic ea vel, consequatur recusandae quo
+          sapiente.</p>
+      </div>
+      <div class="about-box hidden">
+        <div class="about-icon">
+          <i class="fa-solid fa-network-wired"></i>
+        </div>
+        <h3>Network</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque saepe hic ea vel, consequatur recusandae quo
+          sapiente.</p>
+      </div>
+    </div>
   </section>
 
-  <!-- <section id="portfolio">
-    <h2>Portfolio</h2>
-    <div class="project">
-      <img src="project1.jpg" alt="Project 1">
-      <h3>Project 1</h3>
-      <p>Beschreibung von Project 1.</p>
+  <section class="projects" id="projects">
+    <h2 class="heading">Projekte</h2>
+    <div class="wrapper">
+      <div class="project-container">
+        <input type="radio" name="slide" id="c1" checked>
+        <label for="c1" class="card">
+          <div class="row">
+            <div class="icon">1</div>
+            <div class="description">
+              <h4>Hundepension</h4>
+              <p>Ein Frontend Projekt mit Fokus auf Bootstrap und SASS/SCSS.</p>
+            </div>
+          </div>
+        </label>
+        <input type="radio" name="slide" id="c2">
+        <label for="c2" class="card">
+          <div class="row">
+            <div class="icon">2</div>
+            <div class="description">
+              <h4>Jukebox</h4>
+              <p>Eine React App mit Fokus auf OAUTH und einer API von Spotify.</p>
+            </div>
+          </div>
+        </label>
+        <input type="radio" name="slide" id="c3">
+        <label for="c3" class="card">
+          <div class="row">
+            <div class="icon">3</div>
+            <div class="description">
+              <h4>Projekt in Bearbeitung</h4>
+              <p>Aktueller Fokus liegt darin weitere Projekte zu erstellen.</p>
+            </div>
+          </div>
+        </label>
+      </div>
     </div>
-    <div class="project">
-      <img src="project2.jpg" alt="Project 2">
-      <h3>Project 2</h3>
-      <p>Beschreibung von Project 2.</p>
+  </section>
+
+  <section class="skills" id="skills">
+    <h2 class="heading">Fähigkeiten</h2>
+    <div class="skills-container">
+
     </div>
-  </section> -->
+  </section>
 
+  <section class="contact" id="contact">
+    <h2 class="heading">Contact</h2>
+    <div class="contact-container">
 
+    </div>
+  </section>
 
-  <!-- <section id="contact">
-    <h2>Contact</h2>
-    <p>Sie können mich gerne unter folgenden Kontaktdaten erreichen:</p>
-    <ul>
-      <li>Email: ajomdd@gmail.com</li>
-      <li>Phone: 0163 - 3785895</li>
-    </ul>
-  </section> -->
   <script src="https://kit.fontawesome.com/db48d73a1e.js" crossorigin="anonymous"></script>
   <script type="text/javascript" src="main.js"></script>
 </body>
