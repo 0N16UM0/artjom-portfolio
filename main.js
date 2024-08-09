@@ -3,7 +3,6 @@ const navbar = document.querySelector('.navbar');
 const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('header nav a');
 const hiddenelems = document.querySelectorAll('div.hidden');
-const links = document.querySelectorAll('.nav-item');
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
@@ -22,24 +21,18 @@ window.onscroll = () => {
     let height = sec.offsetHeight;
     let id = sec.getAttribute('id');
 
-    if (top >= offset && top > offset + height) {
+    if (top >= offset && top < offset + height) {
       navLinks.forEach(links => {
         links.classList.remove('active');
-        document.querySelector('header nav a [href*=' + id + ' ]').classList.add('active');
+        document.querySelector('header nav a[href*=' + id + ' ]').classList.add('active');
       })
     }
   })
 }
 
-// if (links.length) {
-//   links.forEach((link) => {
-//     link.addEventListener('click', (e) => {
-//       links.forEach((link) => {
-//           link.classList.remove('active');
-//       });
-//       e.preventDefault();
-//       link.classList.add('active');
-//     });
-//   });
-// }
+menuIcon.onClick = () => {
+  menuIcon.classList.toggle('fa-x');
+  navbar.classList.toggle('active');
+}
+
 
