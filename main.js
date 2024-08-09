@@ -30,7 +30,7 @@ window.onscroll = () => {
   })
 }
 
-menuIcon.onClick = () => {
+menuIcon.onclick = () => {
   menuIcon.classList.toggle('fa-x');
   navbar.classList.toggle('active');
 }
