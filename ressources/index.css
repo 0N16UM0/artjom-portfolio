@@ -445,11 +445,19 @@ input:checked + label .description {
 }
 .contact {
   background: rgba(0, 29, 0, 0.815);
+}
+.contact-container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   gap: 3rem;
+}
+.contact h2 {
+  margin: 8rem;
+}
+.contact-container .btn {
+  width: 169px;
 }
 
 @media(max-width:1200px){
