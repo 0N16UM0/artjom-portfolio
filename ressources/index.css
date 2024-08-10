@@ -178,7 +178,7 @@ section {
 .text-animation span::before {
   content: "Software-Entwickler";
   color: #14ff6a;
-  animation: words 20s infinite;
+  animation: words 30s infinite;
 }
 .text-animation span::after {
   content: "";
@@ -189,7 +189,7 @@ section {
   height: 100%;
   border-left: 3px solid transparent;
   right: -8px;
-  animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
+  animation: cursor 0.8s infinite, typing 30s steps(14) infinite;
 }
 @keyframes cursor{
   to{
@@ -357,7 +357,7 @@ background-color: #14ff6a;
   justify-content: center;
   flex-direction: column;
   overflow: hidden;
-  height: 80px;
+  height: 90px;
   width: 520px;
   opacity: 0;
   transform: translateY(30px);
@@ -379,6 +379,7 @@ background-color: #14ff6a;
 }
 .description h4 {
   text-transform: uppercase;
+  padding-top: 3px;
   font-size: 2.1rem;
 }
 input {
