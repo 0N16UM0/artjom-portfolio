@@ -458,7 +458,7 @@ input:checked + label .description {
   margin: 8rem;
 }
 .contact-container .btn {
-  width: 169px;
+  width: 183px;
 }
 
 @media(max-width:1200px){
